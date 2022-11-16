@@ -1,0 +1,26 @@
+<script>
+    function check()
+    {
+       document.getElementById("f1").innerHTML = document.myform.name.value;
+       document.getElementById("f2").innerHTML = document.myform.Favourite.value;
+    }
+</script>
+<form name='myform'>
+    <p>what is your name, please?
+        <input type="text" name="name" value="Your Name">
+        <p>What is your Favourite COlor, Please?</p>
+        <select name="Favourite">
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+        </select>
+    </p>
+    <p><input type="submit" onclick="check(); return false">
+    </p>
+</form> 
+<p>Submit the form and I will show your name and your favourite color below:</p>
+<p id="f1"></p>
+<p id="f2"></p>
